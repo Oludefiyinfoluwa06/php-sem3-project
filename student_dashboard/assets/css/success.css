@@ -1,0 +1,72 @@
+/* This work was done by  Faith Olayinka Taiwoa Student of Lincoln colledge os science management & technology,
+Computer software Engineering Department.
+This is for a student Portal */
+
+
+
+
+
+
+/* Define global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 18rem;
+    margin-left: 28rem;
+    /* padding: 0; */
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88%;
+    border-radius: 40px;
+    
+}
+
+.text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color:red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

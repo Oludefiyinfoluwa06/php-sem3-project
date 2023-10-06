@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+ body {
+  background: white !important;
+}
+/* main-header start */
+[data-target="#mainMenu"] {
+  position: relative;
+  z-index: 999;
+}
+
+#mainMenu li > a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.main-header.fixed-nav #mainMenu li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainMenu li:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+#mainMenu li > a::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 1px);
+  height: 1px;
+  background: red;
+  bottom: -6px;
+  left: 0;
+
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  z-index: -1;
+
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+#mainMenu li > a:hover::before,
+#mainMenu li > a.active::before {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.main-header.fixed-nav #mainMenu li > a::before {
+  background: #000;
+}
+
+.main-header {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.main-header.fixed-nav {
+  top: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.main-header.fixed-nav .navbar-brand > img:last-of-type {
+  display: block;
+}
+
+.main-header.fixed-nav .navbar-brand > img:first-of-type {
+  display: none;
+}
+.navbar-brand {
+  color: #fff;
+}
+.main-header .navbar-brand img {
+  max-width: 80px;
+  animation: fadeInLeft 0.4s both 0.4s;
+}
+/* main-header end */
+#education{
+  font-family: 'poppins';
+  font-size: 60px;
+  color: red;
+}
+.for-all{
+  font-family:'poppins', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.col-md-8{
+  border-left: 1px solid red;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  margin-left: -3px;
+  top: 0;
+}
+.card-body-2{
+  background: pink;
+  height: 210px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.whiteboard{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 6px 8px gray;
+  margin-right: 20px;
+}
+
+.get-cleared{
+  width: 500px;
+  height: 200px;
+  background-color: red;
+  border-radius: 10px;
+}
+.card-title{
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 30px;
+  color: white;
+  font-family:  'poppins','sans-serif';
+}
+.card-detail{
+  padding-top: 10px;
+  padding-left: 20px;
+  color: white;
+  font-weight: lighter;
+}
+.btn-getstarted{
+  margin-left: 20px;
+  padding-left: 5px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+
+.col-md-8 .performances{
+  margin-left: 7px;
+  margin-top: 12px;
+}
+
+.performances .gpa{
+  border: 1px solid #919191;
+  width: 80%;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.performances .sample{
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 7px 7px 9px pink,
+  -7px -7px 9px pink;
+  padding: 0 10px;
+}
+
+.performances .sample:last-child{
+  width: 70%;
+}
+
+.performances .sample2 h6{
+  margin-left: 90px;
+}
+
+.performances h1{
+  color: red;
+  font-weight: bolder;
+}
+
+.clearance{
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 9px pink,
+  -7px -7px 9px pink;
+  width: 90%;
+}
+
+.clearance h4{
+  font-size: 20px;
+}
+
+.clearance h1{
+  font-size: 45px;
+  color: red;
+}
+
+.msgs{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.msgs .rows:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.msgs .rows{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50px;
+}
+
+.msgs .cols{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.msgs img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 13px;
+}
+
+@media (max-width: 991px) {
+  /*header starts*/
+  .collapse.in {
+    display: block !important;
+    padding: 0;
+    clear: both;
+  }
+  .navbar-toggler {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    border: none;
+    border-radius: 0;
+    outline: none !important;
+  }
+
+  .main-header .navbar {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .main-header .navbar{
+      width: 24px;
+      height: 24px;
+  }
+
+  .main-header .navbar-nav {
+    margin-top: 70px;
+  }
+
+  .main-header .navbar-nav li .nav-link {
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 0px;
+  }
+
+  /**/
+  .main-header .navbar-toggler .icon-bar {
+    background-color: #fff;
+    margin: 0 auto 6px;
+    border-radius: 0;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  .main-header .navbar .navbar-toggler .icon-bar:first-child {
+    margin-top: 3px;
+  }
+
+  .main-header .navbar-toggler .icon-bar-1 {
+    width: 10px;
+    top: 0px;
+  }
+
+  .main-header .navbar-toggler .icon-bar-2 {
+    width: 16px;
+    top: 12px;
+  }
+
+  .main-header .navbar-toggler .icon-bar-3 {
+    width: 20px;
+    top: 21px;
+  }
+
+  .main-header .current .icon-bar {
+    margin-bottom: 5px;
+    border-radius: 0;
+    display: block;
+  }
+
+  .main-header .current .icon-bar-1 {
+    width: 18px;
+  }
+
+  .main-header .current .icon-bar-2 {
+    width: 30px;
+  }
+
+  .main-header .current .icon-bar-3 {
+    width: 10px;
+  }
+
+  .main-header .navbar-toggler:hover .icon-bar {
+    background-color: #fff;
+  }
+
+  .main-header .navbar-toggler:focus .icon-bar {
+    background-color: #fff;
+  }
+
+  /*header ends*/
+}
